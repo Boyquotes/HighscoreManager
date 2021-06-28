@@ -3,7 +3,7 @@
 
 ## Highscoremanager
 
-This is a simple script for saving and loading highscoredata.
+This is a simple script for saving and loading highscore data.
 
 
 ## Getting Started
