@@ -106,13 +106,6 @@ func get_highscore_for_player(_player_id, befor = 0, after = 0):
 	waiting_for = WAIT_FOR.HIGHSCORE_FOR_PLAYER
 	time_out_timer.start()
 	
-func get_highscore_for_place(place):
-	var url = "http://dreamlo.com/lb/" + str(public_key)  + "/json/" + str(place) + "/" + str(place)
-	http_request.cancel_request()
-	http_request.request(url)
-	waiting_for = WAIT_FOR.HIGHSCORE_FOR_PLACE
-	time_out_timer.start()
-	
 func get_highscore_for_places(from, to):
 	from = max(from, 1)
 	var url = host + "/get_entries.php?key=" + str(public_key)  + "&from=" + str(from) + "&to=" + str(to)
