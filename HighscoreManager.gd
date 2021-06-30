@@ -13,7 +13,7 @@ enum WAIT_FOR {
 # set in config file under [Highscore]
 var private_key
 var public_key
-var host
+var host = "kitchen-games.de"
 
 var confog_file_path = "res://config.cfg"
 
@@ -46,7 +46,7 @@ func load_config():
 	
 	private_key = config.get_value("Highscore", "private_key")
 	public_key = config.get_value("Highscore", "public_key")
-	host = config.get_value("Highscore", "host")
+	host = config.get_value("Highscore", "host", host)
 	nouns = config.get_value("Highscore", "nouns", nouns)
 	adjectives = config.get_value("Highscore", "adjectives", adjectives)
 	
