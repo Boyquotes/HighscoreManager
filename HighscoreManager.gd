@@ -44,8 +44,8 @@ func load_config():
 	var config = ConfigFile.new()
 	config.load(confog_file_path)
 	
-	private_key = config.get_value("Highscore", "private_key")
-	public_key = config.get_value("Highscore", "public_key")
+	private_key = config.get_value("Highscore", "private_key", private_key)
+	public_key = config.get_value("Highscore", "public_key", public_key)
 	host = config.get_value("Highscore", "host", host)
 	nouns = config.get_value("Highscore", "nouns", nouns)
 	adjectives = config.get_value("Highscore", "adjectives", adjectives)
